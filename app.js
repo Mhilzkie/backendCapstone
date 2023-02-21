@@ -1,4 +1,4 @@
-const express = require('express');
+gconst express = require('express');
 
 // const { getProducts } =  require('./controllers/productController');
 const  productRouter  =  require('./routes/productRoutes');
@@ -31,7 +31,9 @@ var cors = require("cors");
 var app = express();
 
 
-app.use(cors({origin: 'http://localhost:3000'}));
+//app.use(cors({origin: 'http://localhost:3000'}));
+app.use(cors({origin: 'https://lecwis-ys.vercel.app'}));
+
 // app.listen(3000);
 app.use(logger('dev'));
 app.use(express.json());
